@@ -1,0 +1,272 @@
+<html lang="es">
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uner - Facultad de Ciencias de la Administración</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+</head>
+
+<body>
+    <header class="header">
+        <!-- Información y redes sociales -->
+        <div class="contenedor-header">
+            <div class="informacion_header clearfix">
+                <p><i class="fas fa-map-marker"></i> Monseñor Tavella 1424. Concordia. CP(3200)</p>
+                <p><i class="fas fa-envelope"></i> informes.fcad@uner.edu.ar</p>
+            </div>
+            <div class="informacion_header_derecha">
+                <a href="https://www.facebook.com/Fac.Cs.Administracion" target="_blank"><i
+                        class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/fcad.uner/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/channel/UCH07uX8PpyI1-ee24xb2iJQ" target="_blank"><i
+                        class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <!-- Menú de navegación -->
+        <div class="barra-navegacion">
+            <!-- Logo y buscador -->
+            <div class="barra-izquierda">
+                <a href="index.html"><img src="img/logo-uner.png" alt="Logo Uner"></a>
+                <form>
+                    <input class="buscador" type="text" value="" placeholder=" Busca tu carrera...">
+                </form>
+            </div>
+            <!-- Navegacion -->
+            <nav>
+                <button class="menuMobile"><i class="fas fa-bars"></i></button>
+                <ul class="menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="facultad.html">La Facultad</a></li>
+                    <li><a href="carreras.html">Carreras</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a class="boton-inscripcion" href="bedelia.html">Acceso Bedelia</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Menú Beledía -->
+    <main class="bedelia container">
+        <h1>Bienvenido a la Bedelía, eligí la opción deseada para continuar</h1>
+        <nav class="bedelia_menu">
+            <form action="#" method="GET">
+                <input type="search" placeholder="Buscar...">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <ul>
+                <li><a href="#estudiantes">Alumnos</a></li>
+                <li><a href="#carreras">Carreras</a></li>
+            </ul>
+        </nav>
+
+    </main>
+    <!-- Seccion con form y tabla alumnos -->
+    <section class="alumnos_bedelia container" id="estudiantes">
+        <br>
+        <h2>Completa el formulario para agregar nuevos alumnos</h2>
+        <br>
+        <div class="form_alumnos">
+            <form id="estudiantesForm">
+                <label>Nombre</label>
+                <input type="text" id="inputNombre" class="form-control">
+                <br>
+                <label>Apellido</label>
+                <input type="text" id="inputApellido" class="form-control">
+                <br>
+                <label>DNI</label>
+                <input type="number" id="inputDni" class="form-control">
+                <br>
+                <label>Fecha de nacimiento</label>
+                <input type="date" id="inputFecheNacimiento" class="form-control">
+                <br>
+                <label>Nacionalidad</label>
+                <input type="text" id="inputNacionalidad" class="form-control">
+                <br>
+                <label>Email</label>
+                <input type="email" id="inputMail" class="form-control">
+                <br>
+                <label>Celular</label>
+                <input type="number" id="inputCelular" class="form-control">
+                <br>
+                <button type="submit" class="boton-inscripcion" id="btnSubir">Cargar alumno</button>
+            </form>
+        </div>
+
+        <div class="tabla_estudiantes">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>DNI</th>
+                        <th>Fecha de nacimiento</th>
+                        <th>Nacionalidad</th>
+                        <th>Email</th>
+                        <th>Celular</th>
+                    </tr>
+                </thead>
+                <tbody id="tablaEstudiantes">
+                    <tr>
+                        <td>Facundo</td>
+                        <td>Jurado</td>
+                        <td>37564243</td>
+                        <td>03/06/1994</td>
+                        <td>Argentino</td>
+                        <td>phfacundojurado@gmail.com</td>
+                        <td>1124028972</td>
+                    </tr>
+                    <tr>
+                        <td>Gonzalo</td>
+                        <td>Jurado</td>
+                        <td>123456</td>
+                        <td>03/06/1994</td>
+                        <td>Argentino</td>
+                        <td>gonzalo@mail.com</td>
+                        <td>123456</td>
+                    </tr>
+                    <tr>
+                        <td>Maximiliano</td>
+                        <td>Jurado</td>
+                        <td>123456</td>
+                        <td>03/06/1994</td>
+                        <td>Argentino</td>
+                        <td>gonzalo@mail.com</td>
+                        <td>123456</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </section>
+    <!-- Seccion con form y tabla carreras -->
+    <section class="alumnos_bedelia container" id="carreras">
+        <br>
+        <h2>Completa el formulario para agregar/editar carreras</h2>
+        <br>
+        <div class="form_alumnos">
+            <form id="estudiantesForm">
+                <label>Nombre</label>
+                <input type="text" id="inputNombre" class="form-control">
+                <br>
+                <label>Apellido</label>
+                <input type="text" id="inputApellido" class="form-control">
+                <br>
+                <label>DNI</label>
+                <input type="number" id="inputDni" class="form-control">
+                <br>
+                <label>Fecha de nacimiento</label>
+                <input type="date" id="inputFecheNacimiento" class="form-control">
+                <br>
+                <label>Nacionalidad</label>
+                <input type="text" id="inputNacionalidad" class="form-control">
+                <br>
+                <label>Email</label>
+                <input type="email" id="inputMail" class="form-control">
+                <br>
+                <label>Celular</label>
+                <input type="number" id="inputCelular" class="form-control">
+                <br>
+                <button type="submit" class="boton-inscripcion" id="btnSubir">Cargar alumno</button>
+            </form>
+        </div>
+
+        <div class="tabla_estudiantes">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>DNI</th>
+                        <th>Fecha de nacimiento</th>
+                        <th>Nacionalidad</th>
+                        <th>Email</th>
+                        <th>Celular</th>
+                    </tr>
+                </thead>
+                <tbody id="tablaEstudiantes">
+                    <tr>
+                        <td>Facundo</td>
+                        <td>Jurado</td>
+                        <td>37564243</td>
+                        <td>03/06/1994</td>
+                        <td>Argentino</td>
+                        <td>phfacundojurado@gmail.com</td>
+                        <td>1124028972</td>
+                    </tr>
+                    <tr>
+                        <td>Gonzalo</td>
+                        <td>Jurado</td>
+                        <td>123456</td>
+                        <td>03/06/1994</td>
+                        <td>Argentino</td>
+                        <td>gonzalo@mail.com</td>
+                        <td>123456</td>
+                    </tr>
+                    <tr>
+                        <td>Maximiliano</td>
+                        <td>Jurado</td>
+                        <td>123456</td>
+                        <td>03/06/1994</td>
+                        <td>Argentino</td>
+                        <td>gonzalo@mail.com</td>
+                        <td>123456</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <div class="footer__columna">
+            <img src="img/logo-uner.png" alt="Uner logo">
+            <p class="footer__direccion">
+                Monseñor Tavella 1424,<br>
+                Concordia CP(3200) Entre Ríos<br>
+                Teléfono: (+54) (345) 4231400<br>
+                Fax: (+54) (345) 4231410<br>
+                E-mail: informes.fcad@uner.edu.ar
+            </p>
+        </div>
+        <div class="footer__columna">
+            <h2 class="footer__titulo">Enlaces útiles</h2>
+            <ul class="footer__lista">
+                <li><a href="https://www.uner.edu.ar/">Universidad Nacional de Entre Ríos</a></li>
+                <li><a href="https://uner.edu.ar/transparencia/">Transparencia</a></li>
+                <li><a href="https://www.noticias.uner.edu.ar/">UNER Noticias</a></li>
+                <li><a href="http://argentinainvestiga.edu.ar/">Argentina Investiga</a></li>
+                <li><a href="https://eduner.uner.edu.ar/">EDUNER</a></li>
+                <li><a href="https://g3autogestion.uner.edu.ar/g3w3/">SIRUNER</a></li>
+                <li><a href="http://sedici.unlp.edu.ar/">SeDiCI</a></li>
+            </ul>
+        </div>
+        <div class="footer__columna">
+            <h2 class="footer__titulo">Somos parte de</h2>
+            <ul class="footer__lista">
+                <li><a href="https://aapp.webnode.page/">AAPP</a></li>
+                <li><a href="https://bfa.ar/">BFA-Blockchain Federal Argentina</a></li>
+                <li><a href="http://www.adenag.org.ar/">ADENAG</a></li>
+                <li><a href="http://grupomontevideo.org/sitio/">AUGM</a></li>
+                <li><a href="https://www.codece.com.ar/">CODECE</a></li>
+                <li><a href="https://redunci.info.unlp.edu.ar/">Red UNCI</a></li>
+            </ul>
+        </div>
+    </footer>
+    <div class="integrantes">
+        <h5>Integrantes&nbsp;</h5>
+        <p>Facundo Jurado | Gonzalo Jurado | Maximiliano Jurado</p>
+    </div>
+    <script src="js/scripts.js"></script>
+    <script src="js/bedelia.js"></script>
+</body>
+
+</html>
